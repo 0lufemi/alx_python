@@ -1,6 +1,6 @@
 # Python - Functions
 
-0. a + b
+## 0. a + b
 Write a function that adds two integers and returns the result.
     * Prototype: def add(a, b):
     * Returns the value of a + b
