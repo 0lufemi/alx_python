@@ -30,3 +30,23 @@ Write a program that prints the number of and the list of its arguments.
 Write a program that imports the variable ```a``` from the file ```variable_load_2.py``` and prints its value.
 * You are not allowed to use ```*``` for importing or ```__import__```
 * Your code should not be executed when imported
+
+# 3. Integers division with debug
+Write a function that divides 2 integers and prints the result.
+* Prototype: ```def safe_print_division(a, b):```
+* You can assume that ```a``` and ```b``` are integers
+* The result of the division should print on the ```finally:``` section preceded by ```Inside result:```
+* Returns the value of the division, otherwise: ```None```
+* You have to use ```try: / except: / finally:```
+* You have to use ```"{}".format()``` to print the result
+* You are not allowed to import any module
+
+# 4. Raise exception
+Write a function that raises a type exception.
+* Prototype: ```def raise_exception():```
+* You are not allowed to import any module
+
+# 5. Raise a message
+Write a function that raises a name exception with a message.
+* Prototype: ```def raise_exception_msg(message=""):```
+* You are not allowed to import any module
