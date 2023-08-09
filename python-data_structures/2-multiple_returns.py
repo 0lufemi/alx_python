@@ -1,3 +1,5 @@
 def multiple_returns(sentence):
-    str_len, first_char = len(sentence), sentence[0]
-    return (str_len, first_char)
+    if sentence:
+        return len(sentence), sentence[0]
+    else:
+        return 0, None
