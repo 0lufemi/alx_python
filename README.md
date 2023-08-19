@@ -7,3 +7,4 @@
 3. Python - Data Structures
 4. Python - More Data Structures
 5. Python - Classes and Objects
+6. Python - Inheritance
