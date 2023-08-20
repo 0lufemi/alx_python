@@ -1,8 +1,9 @@
+#!/usr/bin/python3
 """
 An empty class
 """
 
-class BaseGeometry(object):
+class BaseGeometry:
     """
     An empty class
     """
