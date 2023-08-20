@@ -2,7 +2,7 @@
 An empty class
 """
 
-class BaseGeometry:
+class BaseGeometry(object):
     """
     An empty class
     """
