@@ -28,6 +28,7 @@ class Rectangle(Base):
         self.y = y
 
     def __str__(self):
+        """Returns a formatted string"""
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
 
     @property
@@ -101,7 +102,9 @@ class Rectangle(Base):
         """
         Method that prints out the Rectangle instance with '#'
         """
-
+        for y in range(self.__y):
+            print()
         for i in range(self.__height):
+            print(" " * self.__x, end="")
             for j in range(self.__width):
                 print("#", end="\n" if j == self.__width - 1 else "")
