@@ -110,6 +110,8 @@ class Rectangle(Base):
                 print("#", end="\n" if j == self.__width - 1 else "")
 
     def update(self, *args):
+        """Updates attribute of an instance"""
+
         if len(args) >= 1:
             self.id = args[0]
         if len(args) >= 2:
