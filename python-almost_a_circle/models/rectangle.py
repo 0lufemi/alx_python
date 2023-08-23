@@ -109,16 +109,30 @@ class Rectangle(Base):
             for j in range(self.__width):
                 print("#", end="\n" if j == self.__width - 1 else "")
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Updates attribute of an instance"""
 
         if len(args) >= 1:
             self.id = args[0]
+        elif "id" in kwargs:
+            self.id = kwargs["id"]
+
         if len(args) >= 2:
             self.width = args[1]
+        elif "width" in kwargs:
+            self.width = kwargs["width"]
+
         if len(args) >= 3:
             self.height = args[2]
+        elif "height" in kwargs:
+            self.height = kwargs["height"]
+
         if len(args) >= 4:
             self.x = args[3]
+        elif "x" in kwargs:
+            self.x = kwargs["x"]
+
         if len(args) >= 5:
             self.y = args[4]
+        elif "y" in kwargs:
+            self.y = kwargs["y"]
