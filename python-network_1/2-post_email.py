@@ -33,7 +33,7 @@ def main():
     try:
         response = requests.post(url, data=payload)
         response_body = response.text
-        print(f"Your email is: {email}")
+        print(f"Email: {email}")
     except requests.exceptions.RequestException as e:
         print("An error occurred:", e)
 
