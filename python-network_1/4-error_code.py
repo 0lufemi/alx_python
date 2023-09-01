@@ -13,9 +13,6 @@ def main():
         response = requests.get(url)
         response.raise_for_status()
         print(response.text)
-    # except requests.exceptions.RequestException as e:
-    #     print(f"An error occurred: {e}")
-    #     sys.exit(1)
     except requests.exceptions.HTTPError as e:
         print(f"Error code: {e.response.status_code}")
         sys.exit(1)
