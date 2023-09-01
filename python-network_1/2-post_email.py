@@ -14,6 +14,7 @@ def main():
 
     try:
         response = requests.post(url, data=payload)
+        response.raise_for_status()
         print(f"Email: {email}")
     except requests.exceptions.RequestException as e:
         print("An error occurred:", e)
