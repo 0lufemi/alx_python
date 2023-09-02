@@ -34,7 +34,7 @@ def main():
     params = {"q": letter}
 
     try:
-        response = requests.post(url, params=params)
+        response = requests.post(url, data=params)
         response_json = response.json()
 
         if response.status_code == 200:
