@@ -22,6 +22,6 @@ if __name__ == "__main__":
         if len(response_json) == 0:
             print("No result")
         else:
-            print(f"[{response_json['id']:d}] {json['name']}")
+            print(f"[{response_json['id']}] {response_json['name']}")
     except Exception:
         print("Not a valid JSON")
