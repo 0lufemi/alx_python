@@ -15,13 +15,13 @@ if __name__ == "__main__":
         arg = ""
     payload = {'q': arg}
     url = "http://0.0.0.0:5000/search_user"
-    r = requests.post(url, data=payload)
+    response = requests.post(url, data=payload)
     try:
-        r.raise_for_status()
-        json = r.json()
-        if len(json) == 0:
+        response.raise_for_status()
+        response_json = response.json()
+        if len(response_json) == 0:
             print("No result")
         else:
-            print("[{:d}] {}".format(json['id'], json['name']))
+            print(f"[{response_json['id']}] {json['name']}")
     except Exception:
         print("Not a valid JSON")
