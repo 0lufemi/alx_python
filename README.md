@@ -8,3 +8,5 @@
 4. Python - More Data Structures
 5. Python - Classes and Objects
 6. Python - Inheritance
+7. Python - Network
+8. Python - Object-relational mapping
