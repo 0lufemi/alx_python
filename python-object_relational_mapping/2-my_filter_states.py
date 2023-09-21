@@ -21,7 +21,7 @@ if __name__ == "__main__":
     state_searched = sys.argv[4]
 
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states WHERE name = '{}'\
+    cursor.execute("SELECT * FROM states WHERE BINARY name = '{}'\
          ORDER BY id ASC".format(state_searched))
 
     rows = cursor.fetchall()
