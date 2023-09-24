@@ -20,7 +20,7 @@ if __name__ == "__main__":
     f = session.query(State).first()
 
     if f:
-        print(f"{f['id']}: {f['name']}")
+        print(f"{f.__dict__['id']}: {f.__dict__['name']}")
     else:
         print("Nothing")
 
