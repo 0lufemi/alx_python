@@ -7,4 +7,3 @@ Write a script that starts a Flask web application:
     * ```/```: display “Hello HBNB!”
 * You must use the option ```strict_slashes=False``` in your route definition
 
-
