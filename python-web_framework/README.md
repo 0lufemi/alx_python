@@ -14,3 +14,5 @@ Copy the previous task to a new script that starts a Flask web application:
 * ```/```: display “Hello HBNB!”
 * ```/hbnb```: display “HBNB”
 * You must use the option ```strict_slashes=False``` in your route definition
+
+
