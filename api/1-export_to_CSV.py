@@ -7,7 +7,7 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    employee_id = sys.argv[1]
+    employee_id = int(sys.argv[1])
     employee_url = f'https://jsonplaceholder.typicode.com/users/{employee_id}'
     employee_res = requests.get(employee_url)
     employee_json = employee_res.json()
