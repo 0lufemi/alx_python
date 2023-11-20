@@ -7,7 +7,7 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    employee_id = int(sys.argv[1])
+    employee_id = sys.argv[1]
     employee_url = f'https://jsonplaceholder.typicode.com/users/{employee_id}'
     employee_res = requests.get(employee_url)
     employee_json = employee_res.json()
@@ -21,3 +21,4 @@ if __name__ == "__main__":
         # f.writerow(["USER_ID","USERNAME","TASK_COMPLETED_STATUS","TASK_TITLE"])
         for task in todo_json:
             f.writerow([employee_id, employee_json['username'], str(task['completed']), task['title']])
+
