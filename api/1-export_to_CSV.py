@@ -18,6 +18,6 @@ if __name__ == "__main__":
 
     with open(f"{employee_id}.csv", "w", encoding='utf8', newline='') as csvfile:
         f = csv.writer(csvfile)
-        f.writerow(["USER_ID","USERNAME","TASK_COMPLETED_STATUS","TASK_TITLE"])
+        # f.writerow(["USER_ID","USERNAME","TASK_COMPLETED_STATUS","TASK_TITLE"])
         for task in todo_json:
             f.writerow([employee_id, employee_json['username'], task['completed'], task['title']])
