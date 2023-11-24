@@ -2,8 +2,8 @@
 Python script to export data in the JSON format
 """
 
-import requests
 import json
+import requests
 
 url = 'https://jsonplaceholder.typicode.com'
 
